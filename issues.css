@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100&display=swap');
+
+body{
+background-color: #010D00;
+font-family: 'M PLUS 1 Code', sans-serif;
+margin:auto;
+ /*background-image: url('https://miro.medium.com/max/1400/0*niXjYtcfh4AIBHnH');*/
+}
+
+.background-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-position: top, bottom;
+  background-image: url('https://images.news18.com/ibnlive/uploads/2020/09/1600070732_online-privacy-internet-tracking-data-privacy.jpg');
+   background-repeat: repeat;
+   background-attachment: fixed;
+   background-size: cover;
+  width: 1500px;
+  height: 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+div.image {
+
+   content:url('https://www.mobileappdaily.com/public/uploads/mad_876568b5d2.png');
+box-shadow: 1 2 8px 8px white ;
+   float: none;
+   margin-left: auto;
+   margin-right: auto;
+   width:450px;
+   height:100%;
+}​
+p, h3{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+h2{
+color: white;
+font-weight: bold;
+  text-align: center;
+  margin-left: 20px
+}
+h1{
+  text-align: center;
+color: white;
+  font-family: 'M PLUS 1 Code', sans-serif;
+}
+h5{
+color: #062601;
+font-weight: bold;
+
+}
+.secure {
+  font-family: 'M PLUS 1 Code', sans-serif;
+  background-color: #01260E;
+  overflow: hidden;
+  top: 0;
+  width:100%;
+position: sticky;
+}
+
+
+.secure a {
+  float: left;
+  color: #F2F2DF;
+  text-align: center;
+  padding: 15px 17px;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+
+.secure a:hover {
+  background-color: #6DA68B;
+  color: black;
+}
+
+
+.secure a.active {
+  background-color: #6DA68B;
+  color: #F2E8B6;
+}
+
+.flip-card {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #062601;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: White;
+  color: black;
+  transform: rotateY(180deg);
+}
